@@ -1,0 +1,72 @@
+:root{
+    --pic: #68ACDD;
+    --font-color: #979EA8;
+    --main: #F8F8F8;
+    --body:#ffffff;
+    --font-family:'calibri';
+}
+
+/***********Base************/
+body{
+    font-family: var(--font-family);
+}
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+.container{
+    width: 900px;
+    margin: auto;
+    background-color:var(--body);
+}
+.clear-fix {
+    clear: both;
+    float: none;
+}
+/***********Header************/
+header{}
+header .container{}
+header .container .logo{
+    width: 50%;
+    float: left;
+
+}
+header .container .logo h1{
+    /*margin: 10px 0 0 50px;*/
+}
+header .container .logo h1 a{}
+header .container .logo h1 a img{
+    width: 27px;
+    margin: 0 0 9px 73px;
+}
+header .container .logo h1 a strong{
+    color: #222222;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left:-5px;
+}
+header .container .logo h1 a strong .blue{
+    color: #5FAAE1;
+}
+header .container .menu {
+    float: right;
+}
+header .container .menu ul {
+    margin: 17px 50px 0 20px;
+
+}
+header .container .menu ul li {
+    display: inline-block;
+    padding-right: 27px;
+    font-size: 11px;
+    alignment: left;
+}
+header .container .menu ul li.left {}
+header .container .menu ul li a {
+
+}
+
+
+/***********************/
+/***********Base************/
+/***********Base************/
