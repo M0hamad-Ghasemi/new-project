@@ -6,8 +6,24 @@
         <link rel="stylesheet" href="ref/css/css-reset.css">
         <link rel="stylesheet" href="plugin/fa/css/font-awesome.min.css">
         <link rel="stylesheet" href="ref/css/styles.css">
+        <script >
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
     </head>
-    <body>
+    <body onload="carousel()">
         <header>
             <div class="container">
                 <section class="logo">
@@ -28,8 +44,153 @@
                 </nav>
                 <div class="clear-fix"></div>
             </div>
-
         </header>
+            <div class="container">
+                <div class="main-png">
+                    <section class="sign">
+                        <h2>
+                            TRACK YOUR NEXT FUEL SHOPS
+                        </h2>
+                        <p>
+                            Manitor and Alert on all petrol bunks near to you
+                        </p>
+                        <div class="one">
+                            <label class="signup">
+                                Signup For<input class="free"  type="submit" value="FREE">
+                            </label>
+                        </div>
+                        <label>
+                            <input class="email" type="email" placeholder="Your E-mail Adress">
+                        </label>
+                        <input class="submit" type="submit" value="SIGNUP">
+                    </section>
+                </div>
+                <div class="main-mene">
+                    <ul class="mene">
+                        <li><a href=""><img class="img1 icon" src="img/icon/evernote.png" alt=""> EVERNOTE</a></li>
+                        <li><a href=""><img class="img2 icon" src="img/icon/microsoft.png" alt=""> Microsoft</a></li>
+                        <li><a href=""><img class="img3 text" src="img/icon/google.png" alt=""></a></li>
+                        <li><a href=""><img class="img4 text" src="img/icon/sony.png" alt=""></a></li>
+                        <li><a href=""><img class="img5 text" src="img/icon/firefox.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="main-map">
+                    <h2 class="h2InMap">WHY TANK APP?</h2>
+                    <section class="maine-text">
+                        <h3><img src="img/icon/cloud2.png" alt=""> Reliable and Secure Platform</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aut cupiditate debitis exercitationem id incidunt magnam nihil nostrum placeat, quos similique, velit voluptatum. Architecto, </p>
+                        <h3><img src="img/icon/timer.png" alt="">Everything is perfectly orgainized</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aut cupiditate debitis exercitationem id incidunt magnam nihil nostrum placeat, quos similique, velit voluptatum. Architecto, </p>
+                        <h3><img src="img/icon/message.png" alt="">Rapied customer support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aut cupiditate debitis exercitationem id incidunt magnam nihil nostrum placeat, quos similique, velit voluptatum. Architecto, </p>
+                        <h3><img src="img/icon/music.png" alt="">Tons of futures and easy to use</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aut cupiditate debitis exercitationem id incidunt magnam nihil nostrum placeat, quos similique, velit voluptatum. Architecto, </p>
 
+
+                    </section>
+                </div>
+                <ul>
+                    <li class="slide time1">
+                <section class="main-slider">
+                    <h2>
+                        WHY TANK APP DIFFRENT1?
+                    </h2>
+                    <h3>
+                        <img src="./img/icon/cloud3.png" alt="">
+                        Works on any devise anyware
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum sapiente vitae! Autem fugiat illo nesciunt provident repellendus similique sit, tempore. A, animi aut cumque earum eos excepturi fuga fugiat incidunt inventore, nihil nisi nulla recusandae rem rerum similique veniam voluptatum? Doloribus enim est quasi Lorem ipsum dolor.
+                    </p>
+                </section>
+                    </li>
+                    <li class="slide time2" >
+                        <section class="main-slider">
+                            <h2>
+                                WHY TANK APP DIFFRENT2?
+                            </h2>
+                            <h3>
+                                <img src="./img/icon/cloud3.png" alt="">
+                                Works on any device
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum sapiente
+                            </p>
+                        </section>
+                    </li>
+                    <li class="slide time3" >
+                        <section class="main-slider">
+                            <h2>
+                                WHY TANK APP DIFFRENT3?
+                            </h2>
+                            <h3>
+                                <img src="./img/icon/cloud3.png" alt="">
+                                Works on any
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum sapiente vitae! Autem fugiat illo nesciunt providen
+                            </p>
+                        </section>
+                    </li>
+                    <li  class="slide time4" >
+                        <section class="main-slider">
+                            <h2>
+                                WHY TANK APP DIFFRENT4?
+                            </h2>
+                            <h3>
+                                <img src="./img/icon/cloud3.png" alt="">
+                                Works on any devise anyware Works on any devise anyware
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum sapiente vitae! Autem fugiat illo nesciunt provident repellendus similique sit, tempore. A, animi aut cumque earum eos excepturi fuga fugiat incidunt inventore,
+                            </p>
+                        </section>
+                    </li>
+                </ul>
+                <section class="main-bottom">
+                    <h2>
+                        SAVE TIME & GAIN AGILITY
+                    </h2>
+                    <p>
+                        <em>
+                        Using our cloud Monitoring Services So you can Socous on Runing Your Better
+                        </em>
+                    </p>
+                    <label>
+                        <i class="fa fa-envelope-o font"></i>
+                        <input class="email" type="email" placeholder="Enter Your E-mail Adress">
+                    </label>
+                    <input class="submit" type="submit" value="SIGN UP">
+                </section>
+            </div>
+        <footer>
+            <div class="container">
+                <section class="logo">
+                    <h1 >
+                        <a href="#">
+                            <img src="./img/icon/icon.png" alt="TankApp">
+                            <strong> TANK<span class="blue ">APP</span> </strong>
+                        </a>
+                    </h1>
+                </section>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">HOW IT WORKS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">ABLOG</a></li>
+                    </ul>
+                </nav>
+                <nav class="icon">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="clear-fix"></div>
+            </div>
+        </footer>
     </body>
 </html>
