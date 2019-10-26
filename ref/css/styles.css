@@ -1,7 +1,7 @@
 :root{
     --pic: #68ACDD;
     --font-color: #979EA8;
-    --main: #F8F8F8;
+    --main: #F5F5F6;
     --body:#ffffff;
     --font-family:'calibri';
 }
@@ -29,10 +29,15 @@ header .container{}
 header .container .logo{
     width: 50%;
     float: left;
-
 }
 header .container .logo h1{
-    /*margin: 10px 0 0 50px;*/
+    margin: -2px 0 -7px 0;
+}
+header .container .logo h1:hover:after {
+    content: "What's up?!";
+    width: 200px;
+    color: #ff0e13;
+    transition: all ease-in 0.5s;
 }
 header .container .logo h1 a{}
 header .container .logo h1 a img{
@@ -60,13 +65,310 @@ header .container .menu ul li {
     padding-right: 27px;
     font-size: 11px;
     alignment: left;
+    /*border-bottom: transparent 3px solid;*/
 }
-header .container .menu ul li.left {}
+
 header .container .menu ul li a {
 
 }
+header .container .menu ul li a:hover{
+    color: #222222;
+
+}
+/************main-png***********/
+.main-png{
+    background-image: url("../../img/main-top.png");
+
+        background-color: var(--pic);
+    background-size: 100%;
+        width: 100%;
+    height: 500px;
+}
+.container .main-png .sign{
+    transform: translatex(11%);
+    padding-top: 14%;
+
+}
+.main-png .sign h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
+    width: 318px;
+    line-height: 45px;
+
+}
+.main-png .sign p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 40px 0;
+}
+.main-png .sign .signup{
+    color: #ffffff;
+    font-size: 11px;
+}
+.main-png .sign div.one .signup .free{
+    border: none;
+    border-radius: 3px;
+    background-color: #FECD4A;
+    color: #ffffff;
+    font-size: 9px;
+    padding: 3px 5px;
+}
+.main-png .sign label input.email{
+    width: 250px;
+    margin: 20px 0;
+}
+.main-png .sign label input.email[type=email]{
+    height: 32px;
+    padding: 0 20px;
+    border-radius: 3px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.main-png .sign label input.email[type=email]::placeholder{
+    /*text-transform: uppercase;*/
+    color: #C9C9CB;
+}
 
 
-/***********************/
-/***********Base************/
-/***********Base************/
+.main-png .sign input.submit{
+    border: none;
+    background-color: #77C444;
+    color: white;
+    padding: 11px 13px;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-size: 10px;
+    }
+.main-png .sign input.submit:hover{
+    color: #77C444;
+    background-color: #beffb5;
+}
+
+/***********main-mene************/
+
+.main-mene{
+    background-color: var(--main);
+}
+.main-mene ul.mene{
+    margin-left: 70px;
+}
+.main-mene ul.mene li{
+    display: inline-block;
+    padding: 30px;
+}
+.main-mene ul.mene  li a img.img1{
+    /*display: none;*/
+
+}
+.main-mene ul.mene  li a img.img1:hover{
+    image("../../img/icon/evernote-hover.png");
+}
+.main-mene ul.mene li a{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.main-mene ul.mene li a img.icon{
+    width: 23px;
+}
+.main-mene ul.mene li a img.text{
+    width: 88px
+}
+
+
+/***********main-map************/
+.container .main-map{
+    background-image: url(../../img/main.png);
+    background-size: 100%;
+    background-color: var(--body);
+    height: 570px;
+    margin-top: 27px;
+
+}
+.main-map .maine-text{
+    transform: translate(83px , 75px);
+}
+.main-map h2.h2InMap{
+    text-align: center;
+    font-weight: 600;
+    font-size: 27px;
+    color: #6d6868e8;
+    padding: 39px 50px 0 0;
+}
+.main-map .maine-text h3{
+    font-size: 13px;
+    color: #787373;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.main-map .maine-text h3 img{
+    width: 33px;
+}
+.main-map .maine-text p{
+    font-size: 10px;
+    color: #5b5f6561;
+    text-align: justify;
+    width: 31%;
+    line-height: 12px;
+    margin-bottom: 18px;
+}
+
+/***********main-slider************/
+.container .main-slider{
+    padding-left: 65px;
+    background-image: url("../../img/icon/ship.png");
+    background-repeat: no-repeat;
+    background-color: var(--main);
+    background-position: 96% 75%;
+    background-size: 38%;
+    height: 421px;
+}
+.container .main-slider h2{
+    padding: 100px 0 0 155px;
+    font-weight: 500;
+    font-size: 27px;
+    color: #6d6868e8;
+
+}
+.container .main-slider h3{
+    font-size: 18px;
+    color: #5f5858;
+    font-weight: 500;
+    margin-bottom: 13px;
+    padding-top: 100px;
+}
+.container .main-slider h3 img{
+    padding-right: 14px;
+    width: 30px;
+}
+.slide{
+    display: none;
+}
+
+.container .main-slider h3 img.time4{
+     background-color: #3f3f3f;
+ }
+.container .main-slider p{
+    font-size: 11px;
+    color: #434c598a;
+    width: 53%;
+    line-height: 17px;
+    margin-bottom: 18px;
+}
+
+/***********main-slider************/
+.container .main-bottom{
+    background-color:var(--body);
+    text-align: center;
+}
+.container .main-bottom h2{
+    font-weight: 500;
+    font-size: 27px;
+    margin-top: 80px;
+    color: #5f5858;
+
+}
+.container .main-bottom p{
+    font-size: 16px;
+    margin: 20px 0 30px 0;
+    font-style: italic;
+    color: #5d5d5a;
+}
+.container .main-bottom label{}
+.container .main-bottom label i.font{
+    position: absolute;
+    color: #c2bdbd;
+    transform: translate(10px , 70%);
+}
+.container .main-bottom label .email{}
+.container .main-bottom label input.email[type=email]{
+    height: 32px;
+    padding: 20px 40px;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 380px;
+}
+.container .main-bottom label input.email[type=email]::placeholder{
+    /*text-transform: uppercase;*/
+    color: #C9C9CB;
+}
+.container .main-bottom input.submit{
+    border: none;
+    background-color: #77C444;
+    color: white;
+    width: 128px;
+    height: 41px;
+    margin-left: 20px;
+    border-radius: 2px;
+    font-size: 11px;
+    margin-bottom: 60px;
+}
+/***********main-slider************/
+footer{
+
+}
+footer .container{
+    background-color: var(--main);
+}
+footer .container .logo{
+    width: 42%;
+    float: left;
+
+}
+
+footer .container .logo h1{
+    margin: 12px 0 12px 0
+}
+footer .container .logo h1 a{}
+footer .container .logo h1 a img{
+    width: 27px;
+    margin: 0 0 9px 73px;
+    filter: grayscale(1);
+}
+footer .container .logo h1 a img:hover{
+filter: none;
+}
+footer .container .logo h1 a strong{
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 24px;
+    margin-left:-5px;
+}
+footer .container .menu {
+    float: left;
+}
+footer .container .menu ul {
+    /*width: 75%;*/
+    margin: 35px 0 35px 20px;
+    border-right: #d1d1d1 1px solid;
+
+}
+footer .container .menu ul li {
+    display: inline-block;
+    padding-right: 24px;
+    font-size: 9px;
+    alignment: left;
+}
+footer .container .menu ul li a {
+
+}
+footer .container .icon{
+    float: right;
+}
+footer .container .icon ul{
+    margin: 35px 100px 35px 0;
+    /*width: 30%;*/
+
+}
+footer .container .icon ul li{
+    display: inline-block;
+    padding-left: 10px;
+}
+footer .container .icon ul li a{}
+footer .container .icon ul li a i{}
+i.fa-facebook:hover{
+    color: #68ACDD;
+}
